@@ -1,0 +1,47 @@
+##给天气app添加chinese/japanese version readme
+
+#基本操作
+第一步：fork原作者的项目到自己的账号
+
+第二步：下载到本地
+1.创建文件夹
+pwd：查看当前目录
+ls：显示文件夹内容
+cd：打开指定文件夹
+mkdir：创建文件夹
+cd ../:返回上一目录
+mv 旧文件名 新文件名
+rm -rf：删除指定文件
+
+2.下载
+git clone http。。。（github自动生成链接）
+
+第三步检查开发环境
+1.pnpm i（如果返回错误，则需要安装开发环境）
+2.pnpm init
+3.pnpm install
+4.pnpm i
+5.pnpm run dev
+➡️如果显示no api
+在根目录下创建.env（touch .env)
+检查是否创建成功ls -a（显示所有文件，包括隐藏文件）
+在.env文件中粘贴作者的api内容
+6.再次执行pnpm run dev
+成功的话可在返回的链接中查看app页面
+
+#更新内容
+1.在vs中README.md同一根目录下创建（直接点击➕创建）README_CN.md README_JP.md文件
+2.输入翻译内容，查看实时网页检查是否有翻译及各式错误
+
+#提交内容
+git add README_CN.md README.md
+git commit -m“Add Chinese version README”
+git add README_JP.md README.md
+git commit -m“Add Japanese version README”
+
+git push origin master（git branch查看当前分支）
+
+#
+最后，在github中检查之后提交pull request
+
+
